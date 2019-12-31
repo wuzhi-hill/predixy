@@ -55,7 +55,7 @@ add_src(Subscribe)
 add_src(Timer)
 
 add_library(predixy SHARED ${SRCS})
-list(APPEND BS ${CMAKE_BINARY_DIR}/libpredixy.so)
+list(APPEND BS ${CMAKE_BINARY_DIR}/libpredixy.so ${CMAKE_BINARY_DIR}/libpredixy.a)
 
 install(FILES ${HS} DESTINATION "${CMAKE_INSTALL_PREFIX}/include/predixy/")
 install(FILES ${BS} DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/")
